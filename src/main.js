@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Numéro de téléphone cible (Format international sans le + ou le 00)
     // À REMPLACER : Mets ton numéro WhatsApp professionnel ici
-    const phoneNumber = "212600000000"; 
+    const phoneNumber = "212668197671"; 
 
     // Construction du message de Neuromarketing B2B
     const message = `Bonjour Foodji Events, \n\nJe souhaite obtenir un devis rapide. Voici les détails de ma demande :\n\n📌 *Type :* ${eventType}\n👥 *Convives :* ${guests}\n📅 *Date :* ${formattedDate}\n\nPouvons-nous échanger pour finaliser cette commande ?`;
