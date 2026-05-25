@@ -21,81 +21,178 @@
 </head>
 <body class="bg-dark text-gray-200 font-sans antialiased">
 
+  <!-- Navigation -->
   <nav class="fixed w-full z-50 bg-dark/90 backdrop-blur-md border-b border-gray-800">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-      <img src="/logo-events.png" alt="Foodji Events" class="h-10">
-      <a href="#devis" class="bg-gold text-dark font-bold px-6 py-2 rounded-sm hover:bg-yellow-500 transition-colors">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="#" class="block">
+        <!-- Intégration du logo transparent -->
+        <img src="/images/logo-foodji-events.png" alt="Foodji Events" class="h-12 w-auto">
+      </a>
+      <a href="#devis" class="bg-gold text-dark font-bold px-6 py-2 rounded-sm hover:bg-yellow-500 transition-colors uppercase tracking-wider text-sm">
         Demander un devis
       </a>
     </div>
   </nav>
 
- <section class="pt-32 pb-20 px-4 max-w-6xl mx-auto text-center">
-  <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">
-    L'art de la table minute pour vos réceptions à <span class="text-gold">Rabat & Salé</span>.
-  </h1>
-  <p class="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
-    Une logistique rigoureuse pour vos événements d'affaires, séminaires et réceptions privées.
-  </p>
-  <a href="#devis" class="inline-block border border-gold text-gold font-bold px-8 py-4 rounded-sm hover:bg-gold hover:text-dark transition-all">
-    Planifier un événement
-  </a>
-</section>
+  <!-- Hero Section -->
+  <section class="pt-32 pb-20 px-4 max-w-6xl mx-auto text-center">
+    <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">
+      L'art de la table minute pour vos réceptions à <span class="text-gold">Rabat & Salé</span>.
+    </h1>
+    <p class="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
+      Une logistique rigoureuse pour vos événements d'affaires, soutenances universitaires et réceptions privées.
+    </p>
+    <a href="#prestations" class="inline-block border border-gold text-gold font-bold px-8 py-4 rounded-sm hover:bg-gold hover:text-dark transition-all">
+      Découvrir nos prestations
+    </a>
+  </section>
 
+  <!-- Réassurance B2B -->
   <section class="bg-black py-16 px-4 border-y border-gray-800">
     <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
       <div>
         <div class="text-gold text-4xl mb-4">⏱️</div>
-        <h3 class="text-white font-bold mb-2">Qualité Minute</h3>
-        <p class="text-gray-400 text-sm">Préparation immédiate pour garantir la fraîcheur absolue de nos produits.</p>
+        <h3 class="text-white font-bold mb-2">Production Minute</h3>
+        <p class="text-gray-400 text-sm">Préparation immédiate pour garantir la fraîcheur absolue de nos assortiments.</p>
       </div>
       <div>
         <div class="text-gold text-4xl mb-4">📍</div>
         <h3 class="text-white font-bold mb-2">Logistique Maîtrisée</h3>
-        <p class="text-gray-400 text-sm">Livraison ponctuelle sur site (Technopolis, Administrations, Domiciles).</p>
+        <p class="text-gray-400 text-sm">Livraison et mise en place ponctuelle sur site (Entreprises, Administrations, Domiciles).</p>
       </div>
       <div>
         <div class="text-gold text-4xl mb-4">⚡</div>
-        <h3 class="text-white font-bold mb-2">Réactivité B2B</h3>
-        <p class="text-gray-400 text-sm">Devis détaillé transmis en moins de 2 heures via WhatsApp.</p>
+        <h3 class="text-white font-bold mb-2">Réactivité Commerciale</h3>
+        <p class="text-gray-400 text-sm">Proposition chiffrée transmise en moins de 2 heures via WhatsApp.</p>
       </div>
     </div>
   </section>
 
-  <section id="devis" class="py-20 px-4 max-w-3xl mx-auto">
-    <div class="bg-gray-900 p-8 border border-gray-800 rounded-sm shadow-2xl">
-      <h2 class="text-2xl text-white font-bold mb-6 text-center">Recevoir une proposition chiffrée</h2>
+  <!-- Section Prestations (Les Packs) -->
+  <section id="prestations" class="py-24 px-4 max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl font-bold text-white mb-4">Nos Formules Traiteur</h2>
+      <p class="text-gray-400 max-w-2xl mx-auto text-sm">Une tarification transparente et une logistique millimétrée, adaptée au format de votre réception.</p>
+    </div>
+
+    <!-- Grille de 3 colonnes -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
       
-      <form id="leadForm" class="space-y-6">
-        <div>
-          <label class="block text-sm font-medium text-gray-400 mb-2">Type d'événement</label>
-          <select id="eventType" class="w-full bg-black border border-gray-700 text-white p-3 rounded-sm focus:border-gold outline-none">
-            <option value="Corporate (Réunion, Séminaire, Afterwork)">Corporate (Entreprise)</option>
-            <option value="Privé (Anniversaire, Fiançailles, Soirée)">Événement Privé</option>
-          </select>
-        </div>
+      <!-- Pack 1 : Corporate -->
+      <div class="bg-gray-900 border border-gray-800 p-8 rounded-sm hover:border-gold transition-colors flex flex-col h-full">
+        <h3 class="text-xl font-bold text-white mb-2">Corporate & Affaires</h3>
+        <p class="text-sm text-gold mb-6 font-semibold">À partir de 80 DH / pers.</p>
+        <ul class="text-gray-400 text-sm space-y-4 mb-8 flex-1">
+          <li class="flex items-start">
+            <span class="text-gold mr-2">▪</span> Pauses café & collations d'affaires
+          </li>
+          <li class="flex items-start">
+            <span class="text-gold mr-2">▪</span> Mini-viennoiseries et petits gâteaux
+          </li>
+          <li class="flex items-start">
+            <span class="text-gold mr-2">▪</span> Assortiment de briouates salées
+          </li>
+          <li class="flex items-start">
+            <span class="text-gold mr-2">▪</span> Thé, café, et jus de fruits (sélection)
+          </li>
+        </ul>
+        <a href="#devis" class="block w-full text-center border border-gray-700 text-white py-3 rounded-sm hover:bg-white hover:text-black transition-colors text-sm font-bold">
+          Détails & Devis
+        </a>
+      </div>
 
-        <div>
-          <label class="block text-sm font-medium text-gray-400 mb-2">Nombre de convives estimé</label>
-          <select id="guests" class="w-full bg-black border border-gray-700 text-white p-3 rounded-sm focus:border-gold outline-none">
-            <option value="10 à 20 personnes">10 à 20 personnes</option>
-            <option value="20 à 50 personnes">20 à 50 personnes</option>
-            <option value="Plus de 50 personnes">Plus de 50 personnes</option>
-          </select>
+      <!-- Pack 2 : Buffet Soutenance (Mis en avant) -->
+      <div class="bg-black border border-gold p-8 relative flex flex-col h-full transform md:-translate-y-4 shadow-2xl z-10">
+        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gold text-black text-xs font-bold px-4 py-1 uppercase tracking-widest">
+          Le plus demandé
         </div>
+        <h3 class="text-2xl font-bold text-white mb-2 mt-2">Buffet Soutenance</h3>
+        <p class="text-sm text-gold mb-6 font-semibold">Forfait complet (dès 115 DH / pers.)</p>
+        <ul class="text-gray-300 text-sm space-y-4 mb-8 flex-1">
+          <li class="flex items-start">
+            <span class="text-gold mr-2">▪</span> 4 Assortiments Mini Salés raffinés
+          </li>
+          <li class="flex items-start">
+            <span class="text-gold mr-2">▪</span> 4 types de Gâteaux Marocains variés
+          </li>
+          <li class="flex items-start">
+            <span class="text-gold mr-2">▪</span> Sélection de gâteaux de soirées
+          </li>
+          <li class="flex items-start">
+            <span class="text-gold mr-2">▪</span> 4 Jus de fruits naturels et Eau minérale
+          </li>
+          <li class="flex items-start font-bold text-white mt-4 pt-4 border-t border-gray-800">
+            <span class="text-gold mr-2">✓</span> Matériel, Service & Décoration florale
+          </li>
+        </ul>
+        <a href="#devis" class="block w-full text-center bg-gold text-black py-4 rounded-sm hover:bg-yellow-500 transition-colors text-sm font-bold">
+          Réserver ma date
+        </a>
+      </div>
 
-        <div>
-          <label class="block text-sm font-medium text-gray-400 mb-2">Date souhaitée</label>
-          <input type="date" id="eventDate" required class="w-full bg-black border border-gray-700 text-white p-3 rounded-sm focus:border-gold outline-none">
-        </div>
+      <!-- Pack 3 : Privé -->
+      <div class="bg-gray-900 border border-gray-800 p-8 rounded-sm hover:border-gold transition-colors flex flex-col h-full">
+        <h3 class="text-xl font-bold text-white mb-2">Réceptions Privées</h3>
+        <p class="text-sm text-gold mb-6 font-semibold">Sur-mesure (Plateaux à partager)</p>
+        <ul class="text-gray-400 text-sm space-y-4 mb-8 flex-1">
+          <li class="flex items-start">
+            <span class="text-gold mr-2">▪</span> Soirées, anniversaires, rassemblements
+          </li>
+          <li class="flex items-start">
+            <span class="text-gold mr-2">▪</span> Assortiment convivial "Finger Food"
+          </li>
+          <li class="flex items-start">
+            <span class="text-gold mr-2">▪</span> Livraison soignée à domicile
+          </li>
+        </ul>
+        <a href="#devis" class="block w-full text-center border border-gray-700 text-white py-3 rounded-sm hover:bg-white hover:text-black transition-colors text-sm font-bold">
+          Détails & Devis
+        </a>
+      </div>
 
-        <button type="submit" class="w-full bg-gold text-dark font-bold text-lg py-4 rounded-sm hover:bg-yellow-500 transition-colors mt-4">
-          Ouvrir sur WhatsApp
-        </button>
-      </form>
     </div>
   </section>
 
+  <!-- Moteur de conversion (Leads) -->
+  <section id="devis" class="py-20 px-4 bg-black border-t border-gray-800">
+    <div class="max-w-3xl mx-auto">
+      <div class="bg-gray-900 p-8 border border-gray-800 rounded-sm shadow-2xl">
+        <h2 class="text-2xl text-white font-bold mb-6 text-center">Recevoir une proposition chiffrée</h2>
+        
+        <form id="leadForm" class="space-y-6">
+          <div>
+            <label class="block text-sm font-medium text-gray-400 mb-2">Type de prestation souhaitée</label>
+            <select id="eventType" class="w-full bg-black border border-gray-700 text-white p-3 rounded-sm focus:border-gold outline-none">
+              <option value="Buffet Soutenance / Inauguration">Buffet Soutenance / Inauguration</option>
+              <option value="Corporate (Réunion, Séminaire)">Événement Corporate</option>
+              <option value="Réception Privée (Soirée, Anniversaire)">Réception Privée</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-400 mb-2">Nombre de convives estimé</label>
+            <select id="guests" class="w-full bg-black border border-gray-700 text-white p-3 rounded-sm focus:border-gold outline-none">
+              <option value="Moins de 20 personnes">Moins de 20 personnes</option>
+              <option value="20 à 50 personnes">20 à 50 personnes</option>
+              <option value="50 à 100 personnes">50 à 100 personnes</option>
+              <option value="Plus de 100 personnes">Plus de 100 personnes</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-400 mb-2">Date souhaitée</label>
+            <input type="date" id="eventDate" required class="w-full bg-black border border-gray-700 text-white p-3 rounded-sm focus:border-gold outline-none">
+          </div>
+
+          <button type="submit" class="w-full bg-gold text-dark font-bold text-lg py-4 rounded-sm hover:bg-yellow-500 transition-colors mt-4">
+            Ouvrir sur WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer B2B -->
   <footer class="bg-black py-10 px-4 border-t border-gray-800 text-center text-sm text-gray-500">
     <div class="max-w-6xl mx-auto">
       <p class="text-white font-bold mb-2">FOODJI EVENTS by KiproKorp</p>
@@ -105,6 +202,7 @@
     </div>
   </footer>
 
+  <!-- Inclusion de ton script métier (WhatsApp API) -->
   <script type="module" src="/src/main.js"></script>
 </body>
 </html>
