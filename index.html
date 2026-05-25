@@ -1,13 +1,110 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>events</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow">
+  <title>Foodji Events | Traiteur Premium B2B à Rabat & Salé</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: '#D4AF37',
+            dark: '#111111',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-dark text-gray-200 font-sans antialiased">
+
+  <nav class="fixed w-full z-50 bg-dark/90 backdrop-blur-md border-b border-gray-800">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <img src="/logo-events.png" alt="Foodji Events" class="h-10">
+      <a href="#devis" class="bg-gold text-dark font-bold px-6 py-2 rounded-sm hover:bg-yellow-500 transition-colors">
+        Demander un devis
+      </a>
+    </div>
+  </nav>
+
+  <section class="pt-32 pb-20 px-4 max-w-6xl mx-auto text-center">
+    <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">
+      Le Traiteur Premium de vos Événements à <span class="text-gold">Rabat & Salé</span>.
+    </h1>
+    <p class="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
+      L'obsession de la qualité minute pour vos réceptions professionnelles et soirées privées.
+    </p>
+    <a href="#devis" class="inline-block border border-gold text-gold font-bold px-8 py-4 rounded-sm hover:bg-gold hover:text-dark transition-all">
+      Configurer mon événement
+    </a>
+  </section>
+
+  <section class="bg-black py-16 px-4 border-y border-gray-800">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      <div>
+        <div class="text-gold text-4xl mb-4">⏱️</div>
+        <h3 class="text-white font-bold mb-2">Qualité Minute</h3>
+        <p class="text-gray-400 text-sm">Préparation immédiate pour garantir la fraîcheur absolue de nos produits.</p>
+      </div>
+      <div>
+        <div class="text-gold text-4xl mb-4">📍</div>
+        <h3 class="text-white font-bold mb-2">Logistique Maîtrisée</h3>
+        <p class="text-gray-400 text-sm">Livraison ponctuelle sur site (Technopolis, Administrations, Domiciles).</p>
+      </div>
+      <div>
+        <div class="text-gold text-4xl mb-4">⚡</div>
+        <h3 class="text-white font-bold mb-2">Réactivité B2B</h3>
+        <p class="text-gray-400 text-sm">Devis détaillé transmis en moins de 2 heures via WhatsApp.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="devis" class="py-20 px-4 max-w-3xl mx-auto">
+    <div class="bg-gray-900 p-8 border border-gray-800 rounded-sm shadow-2xl">
+      <h2 class="text-2xl text-white font-bold mb-6 text-center">Recevoir une proposition chiffrée</h2>
+      
+      <form id="leadForm" class="space-y-6">
+        <div>
+          <label class="block text-sm font-medium text-gray-400 mb-2">Type d'événement</label>
+          <select id="eventType" class="w-full bg-black border border-gray-700 text-white p-3 rounded-sm focus:border-gold outline-none">
+            <option value="Corporate (Réunion, Séminaire, Afterwork)">Corporate (Entreprise)</option>
+            <option value="Privé (Anniversaire, Fiançailles, Soirée)">Événement Privé</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-gray-400 mb-2">Nombre de convives estimé</label>
+          <select id="guests" class="w-full bg-black border border-gray-700 text-white p-3 rounded-sm focus:border-gold outline-none">
+            <option value="10 à 20 personnes">10 à 20 personnes</option>
+            <option value="20 à 50 personnes">20 à 50 personnes</option>
+            <option value="Plus de 50 personnes">Plus de 50 personnes</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-gray-400 mb-2">Date souhaitée</label>
+          <input type="date" id="eventDate" required class="w-full bg-black border border-gray-700 text-white p-3 rounded-sm focus:border-gold outline-none">
+        </div>
+
+        <button type="submit" class="w-full bg-gold text-dark font-bold text-lg py-4 rounded-sm hover:bg-yellow-500 transition-colors mt-4">
+          Ouvrir sur WhatsApp
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-black py-10 px-4 border-t border-gray-800 text-center text-sm text-gray-500">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-white font-bold mb-2">FOODJI EVENTS by KiproKorp</p>
+      <p>Résidence Mail Central, Immeuble Salima, Sala Al Jadida</p>
+      <p class="mt-4 text-xs">ICE: [TON_ICE_ICI] | RC: [TON_RC_ICI]</p>
+      <p class="mt-4">© 2026 Foodji Events. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
 </html>
